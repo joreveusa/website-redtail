@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redtail Land Surveying — Precision You Can Build On | New Mexico</title>
+  <meta name="description" content="Redtail Land Surveying provides boundary surveys, topographic surveys, ALTA/NSPS, and construction staking across New Mexico. Get a free preliminary estimate online." />
+  <meta name="keywords" content="land surveyor New Mexico, boundary survey NM, topographic survey, ALTA survey, construction staking, licensed surveyor, PLS New Mexico" />
+  <meta name="theme-color" content="#1B3009" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='8' r='5' fill='%23E8630A'/%3E%3Cline x1='20' y1='13' x2='8' y2='36' stroke='%23E8630A' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='20' y1='13' x2='32' y2='36' stroke='%23E8630A' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='20' y1='20' x2='20' y2='36' stroke='%23E8630A' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='6' y1='36' x2='34' y2='36' stroke='%232D5016' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Redtail Land Surveying — Precision You Can Build On" />
+  <meta property="og:description" content="New Mexico's trusted land surveying professionals. Get a free online estimate in minutes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="public/hero.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Leaflet CSS loaded lazily by JS when map is needed -->
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="public/hero.jpg" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link" aria-label="Redtail Land Surveying — Home">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Survey tripod icon -->
+            <circle cx="20" cy="8" r="5" fill="#E8630A"/>
+            <line x1="20" y1="13" x2="8" y2="36" stroke="#E8630A" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="20" y1="13" x2="32" y2="36" stroke="#E8630A" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="20" y1="20" x2="20" y2="36" stroke="#E8630A" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="6" y1="36" x2="34" y2="36" stroke="#2D5016" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">Redtail</span>
+          <span class="logo-sub">Land Surveying</span>
+        </div>
+      </a>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#services" class="nav-link" id="nav-services">Services</a></li>
+        <li><a href="#process" class="nav-link" id="nav-process">Our Process</a></li>
+        <li><a href="#faq" class="nav-link" id="nav-faq">FAQ</a></li>
+        <li><a href="#quote" class="nav-link nav-cta" id="nav-quote">Get an Estimate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- ===================== HOME ===================== -->
+  <section id="home" class="section-home">
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-bg">
+        <div class="hero-overlay"></div>
+        <video autoplay muted loop playsinline class="hero-video" id="hero-bg-video">
+          <source src="public/hero_video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-gradient-fallback"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Licensed Professional Surveyors — New Mexico PLS
+        </div>
+        <h1 class="hero-title">Precision<br/><span class="hero-accent">You Can Build On</span></h1>
+        <p class="hero-subtitle">Redtail Land Surveying delivers accurate, defensible surveys for property owners, developers, contractors, and attorneys across New Mexico — on time, every time.</p>
+        <div class="hero-actions">
+          <a href="#quote" class="btn btn-primary btn-lg" id="hero-cta-btn">
+            Get a Free Estimate
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#process" class="btn btn-ghost btn-lg" id="hero-process-btn">How It Works</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">20+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">1,500+</span>
+            <span class="stat-label">Surveys Completed</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">All 33</span>
+            <span class="stat-label">NM Counties</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust bar -->
+    <div class="trust-bar">
+      <div class="trust-container">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Licensed & Insured</span>
+        </div>
+        <div class="trust-sep">·</div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+          <span>NSPS Member</span>
+        </div>
+        <div class="trust-sep">·</div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span>NM RBSLS Certified</span>
+        </div>
+        <div class="trust-sep">·</div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Quick Turnaround</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services overview strip -->
+    <div class="services-strip">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">What We Do</p>
+          <h2 class="section-title">Survey Services</h2>
+          <p class="section-desc">From small residential lots to large commercial developments, we have the expertise and equipment for every scope of work.</p>
+        </div>
+        <div class="services-grid" id="services-overview-grid">
+          <!-- Cards injected by JS -->
+        </div>
+        <div class="strip-cta">
+          <a href="#services" class="btn btn-outline" id="all-services-btn">View All Services</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mini process -->
+    <div class="mini-process">
+      <div class="container">
+        <div class="process-split">
+          <div class="process-text">
+            <div class="section-header reveal">
+              <p class="section-eyebrow">The Journey</p>
+              <h2 class="section-title">Personal. Transparent. Professional.</h2>
+            </div>
+            <div class="process-steps reveal" id="mini-process-steps">
+              <!-- Steps injected by JS -->
+            </div>
+          </div>
+          <div class="process-image-wrapper reveal">
+            <img src="public/survey_crew_real.jpg" alt="Redtail Land Surveyors on site" class="process-image float-anim" />
+            <div class="image-accent-border"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Client Stories</p>
+          <h2 class="section-title">Trusted by Property Owners Across New Mexico</h2>
+        </div>
+        <div class="testimonials-grid" id="testimonials-grid">
+          <!-- Cards injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- In The Field Gallery -->
+    <div class="in-the-field">
+      <div class="container">
+        <div class="section-header center-align">
+          <p class="section-eyebrow">Our Work</p>
+          <h2 class="section-title">In The Field</h2>
+        </div>
+        <div class="masonry-grid" id="masonry-gallery">
+          <!-- Images injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Final CTA banner -->
+    <div class="cta-banner">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to Get Started?</h2>
+          <p class="cta-desc">Get a preliminary estimate in minutes. Our online tool collects all the details we need to give you an accurate project scope.</p>
+          <a href="#quote" class="btn btn-primary btn-xl" id="banner-cta-btn">
+            Start Your Free Estimate
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <p class="cta-disclaimer">* All estimates are preliminary and subject to a records search. Not a binding quote.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services" class="section-page section-services" hidden>
+    <div class="page-hero page-hero-services">
+      <div class="container">
+        <p class="section-eyebrow">Our Expertise</p>
+        <h1 class="page-title">Survey Services</h1>
+        <p class="page-desc">Precise, legally defensible surveys delivered by New Mexico licensed professionals. Every project backed by thorough records research and modern field equipment.</p>
+      </div>
+    </div>
+    <div class="container" id="services-detail-container">
+      <!-- Injected by JS -->
+    </div>
+    <div class="services-equipment">
+      <div class="container">
+        <div class="equipment-content">
+          <div class="equipment-text">
+            <p class="section-eyebrow">Our Equipment</p>
+            <h2 class="section-title">State-of-the-Art Technology</h2>
+            <p>We invest in the latest surveying technology — Leica total stations, Trimble GNSS receivers, and UAV drone systems — so every measurement meets or exceeds NMAC standards.</p>
+            <ul class="equipment-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                Robotic Total Stations (sub-second accuracy)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                RTK/Network GNSS (centimeter-level GPS)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                UAV Drone Photogrammetry (large-scale topo)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                AutoCAD / Civil 3D drafting
+              </li>
+            </ul>
+            <a href="#quote" class="btn btn-primary" id="services-estimate-btn">Request an Estimate</a>
+          </div>
+          <div class="equipment-visual reveal">
+            <div class="equipment-image-wrapper">
+              <img src="public/survey_equipment_real.jpg" alt="Redtail High-tech modern surveying station" class="equipment-image float-anim-slow" />
+              <div class="equipment-badge">
+                <span class="badge-icon">📡</span>
+                <span>Sub-centimeter Precision</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section id="process" class="section-page section-process" hidden>
+    <div class="page-hero page-hero-process">
+      <div class="container">
+        <p class="section-eyebrow">What to Expect</p>
+        <h1 class="page-title">Our Survey Process</h1>
+        <p class="page-desc">Surveying isn't just sticking stakes in the ground. It's a disciplined profession that involves legal research, precision fieldwork, and licensed drafting. Here's how every project unfolds.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="process-timeline" id="process-timeline">
+        <!-- Injected by JS -->
+      </div>
+      <div class="process-fyi">
+        <div class="fyi-card">
+          <div class="fyi-icon">⏱️</div>
+          <h3>Typical Timelines</h3>
+          <ul>
+            <li><strong>Boundary Survey:</strong> 2–4 weeks</li>
+            <li><strong>Topographic Survey:</strong> 1–3 weeks</li>
+            <li><strong>ALTA/NSPS:</strong> 3–6 weeks</li>
+            <li><strong>Construction Staking:</strong> 3–5 days</li>
+          </ul>
+          <p class="fyi-note">Timelines depend on records availability, project size, and scheduling. Rush service is available on select project types.</p>
+        </div>
+        <div class="fyi-card">
+          <div class="fyi-icon">📋</div>
+          <h3>What You'll Receive</h3>
+          <ul>
+            <li>Signed & sealed plat/map (PDF + CAD)</li>
+            <li>Corner monuments set per NMAC</li>
+            <li>Deed description (if requested)</li>
+            <li>Digital survey file for your records</li>
+          </ul>
+        </div>
+        <div class="fyi-card">
+          <div class="fyi-icon">📁</div>
+          <h3>Help Us Help You</h3>
+          <ul>
+            <li>Prior surveys or plats</li>
+            <li>Deed or title commitment</li>
+            <li>Closing documents</li>
+            <li>Any neighbor agreements</li>
+          </ul>
+          <p class="fyi-note">Providing existing documents reduces research time and project cost.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq" class="section-page section-faq" hidden>
+    <div class="page-hero page-hero-faq">
+      <div class="container">
+        <p class="section-eyebrow">Common Questions</p>
+        <h1 class="page-title">Frequently Asked Questions</h1>
+        <p class="page-desc">Real answers to the questions we hear every day — from property owners, realtors, and contractors.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="faq-grid" id="faq-accordion">
+        <!-- Injected by JS -->
+      </div>
+      <div class="faq-cta">
+        <p>Still have questions? We're happy to talk through your project.</p>
+        <div class="faq-cta-actions">
+          <a href="tel:+15055550100" class="btn btn-outline" id="faq-call-btn">Call Us</a>
+          <a href="#quote" class="btn btn-primary" id="faq-estimate-btn">Get an Estimate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== QUOTE WIZARD ===================== -->
+  <section id="quote" class="section-page section-quote" hidden>
+    <div class="page-hero page-hero-quote">
+      <div class="container">
+        <p class="section-eyebrow">No Obligation</p>
+        <h1 class="page-title">Get a Free Preliminary Estimate</h1>
+        <p class="page-desc">Tell us about your project in 4 easy steps. The more detail you provide, the more accurate our estimate — and the faster we can get started.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wizard-wrapper">
+        <!-- Progress bar -->
+        <div class="wizard-progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <div class="progress-steps" id="progress-steps">
+            <div class="progress-step active" data-step="1" id="prog-step-1">
+              <div class="step-circle">1</div>
+              <div class="step-label">Contact</div>
+            </div>
+            <div class="progress-step" data-step="2" id="prog-step-2">
+              <div class="step-circle">2</div>
+              <div class="step-label">Property</div>
+            </div>
+            <div class="progress-step" data-step="3" id="prog-step-3">
+              <div class="step-circle">3</div>
+              <div class="step-label">Map It</div>
+            </div>
+            <div class="progress-step" data-step="4" id="prog-step-4">
+              <div class="step-circle">4</div>
+              <div class="step-label">Documents</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step panels -->
+        <div class="wizard-panel" id="wizard-step-1">
+          <h2 class="wizard-step-title">Step 1 — Contact Information</h2>
+          <p class="wizard-step-desc">We capture this first so we can follow up even if you don't complete the form.</p>
+          <form class="wizard-form" id="form-step1" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="input-name">Full Name *</label>
+                <input type="text" id="input-name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+                <span class="field-error" id="err-name"></span>
+              </div>
+            </div>
+            <div class="form-row form-row-2">
+              <div class="form-group">
+                <label for="input-email">Email Address *</label>
+                <input type="email" id="input-email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+                <span class="field-error" id="err-email"></span>
+              </div>
+              <div class="form-group">
+                <label for="input-phone">Phone Number *</label>
+                <input type="tel" id="input-phone" name="phone" placeholder="(505) 555-0100" required autocomplete="tel" />
+                <span class="field-error" id="err-phone"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="input-role">Your Role</label>
+              <select id="input-role" name="role">
+                <option value="">Select your role…</option>
+                <option value="property-owner">Property Owner</option>
+                <option value="realtor">Realtor / Title Agent</option>
+                <option value="contractor">Contractor / Developer</option>
+                <option value="attorney">Attorney</option>
+                <option value="engineer">Engineer / Architect</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="wizard-panel" id="wizard-step-2" hidden>
+          <h2 class="wizard-step-title">Step 2 — Property Details</h2>
+          <p class="wizard-step-desc">Tell us about the property and the type of survey you need.</p>
+          <form class="wizard-form" id="form-step2" novalidate>
+            <div class="form-group">
+              <label for="input-address">Property Address or Legal Description *</label>
+              <input type="text" id="input-address" name="address" placeholder="123 Main St, Santa Fe, NM 87501 or Section/Township/Range" required />
+              <p class="field-hint">Enter a street address, city, or township description — we'll locate it on the map in the next step.</p>
+              <span class="field-error" id="err-address"></span>
+            </div>
+            <div class="form-row form-row-2">
+              <div class="form-group">
+                <label for="input-county">County *</label>
+                <select id="input-county" name="county" required>
+                  <option value="">Select county…</option>
+                  <option>Bernalillo</option><option>Catron</option><option>Chaves</option>
+                  <option>Cibola</option><option>Colfax</option><option>Curry</option>
+                  <option>De Baca</option><option>Doña Ana</option><option>Eddy</option>
+                  <option>Grant</option><option>Guadalupe</option><option>Harding</option>
+                  <option>Hidalgo</option><option>Lea</option><option>Lincoln</option>
+                  <option>Los Alamos</option><option>Luna</option><option>McKinley</option>
+                  <option>Mora</option><option>Otero</option><option>Quay</option>
+                  <option>Rio Arriba</option><option>Roosevelt</option><option>Sandoval</option>
+                  <option>San Juan</option><option>San Miguel</option><option>Santa Fe</option>
+                  <option>Sierra</option><option>Socorro</option><option>Taos</option>
+                  <option>Torrance</option><option>Union</option><option>Valencia</option>
+                </select>
+                <span class="field-error" id="err-county"></span>
+              </div>
+              <div class="form-group">
+                <label for="input-acres">Approximate Acreage</label>
+                <input type="number" id="input-acres" name="acres" placeholder="e.g. 2.5" min="0.01" step="0.01" />
+                <p class="field-hint">Best estimate is fine — the map tool will help us measure.</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="input-service">Survey Type *</label>
+              <select id="input-service" name="service" required>
+                <option value="">Select service type…</option>
+                <option value="boundary">Boundary Survey — Define or locate property corners & lines</option>
+                <option value="topographic">Topographic Survey — Contours, grades & elevation data</option>
+                <option value="alta">ALTA/NSPS Land Title Survey — Lender/title company requirement</option>
+                <option value="staking">Construction Staking — Set grade stakes for builders & contractors</option>
+                <option value="subdivision">Subdivision Platting — Divide land into legal lots</option>
+                <option value="mortgage">Mortgage/Closing Survey — Basic ILC for real estate closing</option>
+                <option value="unsure">Not Sure — I need help determining what type I need</option>
+              </select>
+              <span class="field-error" id="err-service"></span>
+            </div>
+            <div class="form-group">
+              <label for="input-timeline">Desired Timeline</label>
+              <select id="input-timeline" name="timeline">
+                <option value="">No preference</option>
+                <option value="asap">ASAP / Rush</option>
+                <option value="2weeks">Within 2 weeks</option>
+                <option value="month">Within a month</option>
+                <option value="flexible">Flexible</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="wizard-panel" id="wizard-step-3" hidden>
+          <h2 class="wizard-step-title">Step 3 — Mark Your Property on the Map</h2>
+          <p class="wizard-step-desc">Use the drawing tool to outline the area you need surveyed. This helps our team visualize the scope of work before calling you back.</p>
+          <div class="map-toolbar">
+            <div class="map-instructions">
+              <span class="map-tip-icon">✏️</span>
+              <span>Click the <strong>polygon tool</strong> in the top-left of the map, then click to trace your property boundary. Double-click to finish.</span>
+            </div>
+            <button class="btn btn-sm btn-ghost" id="map-clear-btn" type="button">Clear Drawing</button>
+          </div>
+          <div id="survey-map" class="survey-map"></div>
+          <div class="map-info" id="map-area-info" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <span id="map-area-text">Area drawn successfully.</span>
+          </div>
+          <p class="map-optional">This step is optional — you can skip it and we'll determine the area from your address.</p>
+        </div>
+
+        <div class="wizard-panel" id="wizard-step-4" hidden>
+          <h2 class="wizard-step-title">Step 4 — Upload Documents & Submit</h2>
+          <p class="wizard-step-desc">Attach any existing surveys, deeds, or title commitments. These help us reduce research time (and cost).</p>
+          <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="File upload drop zone">
+            <div class="dropzone-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 44V20M24 28l8-8 8 8" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M48 44H56a4 4 0 0 0 4-4v-4a4 4 0 0 0-4-4h-2.5M16 44H8a4 4 0 0 1-4-4v-4a4 4 0 0 1 4-4h2.5M20 32.7A12 12 0 0 1 32 20a12 12 0 0 1 12 12.7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="dropzone-main">Drag & drop files here</p>
+            <p class="dropzone-sub">PDF, JPG, TIFF — up to 25 MB each</p>
+            <button class="btn btn-outline btn-sm" id="browse-files-btn" type="button">Browse Files</button>
+            <input type="file" id="file-input" multiple accept=".pdf,.jpg,.jpeg,.tiff,.tif,.png" class="visually-hidden" />
+          </div>
+          <div class="file-list" id="file-list" hidden>
+            <h4>Attached Files</h4>
+            <ul id="file-list-items"></ul>
+          </div>
+          <div class="form-group notes-group">
+            <label for="input-notes">Additional Notes</label>
+            <textarea id="input-notes" name="notes" rows="4" placeholder="Describe any access issues, neighbor disputes, known encroachments, or anything else that may be relevant…"></textarea>
+          </div>
+          <div class="disclaimer-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <p><strong>Important:</strong> Any cost estimate provided by Redtail Land Surveying is a <em>preliminary estimate</em> based on the information you provide and is subject to revision following a records search. It is not a binding quote until a formal proposal is issued.</p>
+          </div>
+          <div class="submit-row">
+            <label class="checkbox-label" id="consent-label">
+              <input type="checkbox" id="input-consent" name="consent" />
+              <span class="checkbox-box"></span>
+              I agree to be contacted by Redtail Land Surveying regarding this request.
+            </label>
+            <span class="field-error" id="err-consent"></span>
+          </div>
+        </div>
+
+        <!-- Wizard navigation -->
+        <div class="wizard-nav">
+          <button class="btn btn-ghost" id="wizard-back-btn" hidden type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back
+          </button>
+          <div class="nav-spacer"></div>
+          <button class="btn btn-primary" id="wizard-next-btn" type="button">
+            Next Step
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <button class="btn btn-primary btn-submit" id="wizard-submit-btn" type="button" hidden>
+            Submit Request
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          </button>
+        </div>
+
+        <!-- Success state -->
+        <div class="wizard-success" id="wizard-success" hidden>
+          <div class="success-icon">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="40" r="38" stroke="#2D5016" stroke-width="4"/>
+              <path d="M24 40l12 12 20-24" stroke="#E8630A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h2>Request Submitted!</h2>
+          <p>Thank you for reaching out to Redtail Land Surveying. A member of our team will review your project details and contact you within <strong>1–2 business days</strong>.</p>
+          <p class="success-sub">Check your email for a confirmation. In the meantime, explore our FAQ or call us directly at <a href="tel:+15055550100">(505) 555-0100</a>.</p>
+          <a href="#home" class="btn btn-primary" id="success-home-btn">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="8" r="5" fill="#E8630A"/>
+            <line x1="20" y1="13" x2="8" y2="36" stroke="#E8630A" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="20" y1="13" x2="32" y2="36" stroke="#E8630A" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="20" y1="20" x2="20" y2="36" stroke="#E8630A" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="6" y1="36" x2="34" y2="36" stroke="#2D5016" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <div>
+            <div class="footer-logo-main">Redtail Land Surveying</div>
+            <div class="footer-logo-sub">LLC</div>
+          </div>
+        </div>
+        <p class="footer-tagline">Precision You Can Build On</p>
+        <div class="footer-certs">
+          <span class="cert-badge">PLS — New Mexico</span>
+          <span class="cert-badge">NSPS Member</span>
+          <span class="cert-badge">RBSLS Certified</span>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home" class="footer-nav-link">Home</a></li>
+          <li><a href="#services" class="footer-nav-link">Services</a></li>
+          <li><a href="#process" class="footer-nav-link">Our Process</a></li>
+          <li><a href="#faq" class="footer-nav-link">FAQ</a></li>
+          <li><a href="#quote" class="footer-nav-link">Get an Estimate</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-services-list">
+        <h4>Services</h4>
+        <ul>
+          <li>Boundary Survey</li>
+          <li>Topographic Survey</li>
+          <li>ALTA/NSPS Survey</li>
+          <li>Construction Staking</li>
+          <li>Subdivision Platting</li>
+          <li>Mortgage/Closing Survey</li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.61 19a19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-2.91-8.18A2 2 0 0 1 4.68 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+15055550100">(505) 555-0100</a>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:info@redtailsurvey.com">info@redtailsurvey.com</a>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Santa Fe, NM · Serving all 33 counties</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="footer-year"></span> Redtail Land Surveying, LLC. All rights reserved.</p>
+      <p>Licensed Professional Surveyors — New Mexico Board of Licensure for Professional Engineers and Professional Surveyors</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- Libraries (Leaflet loaded lazily by JS when needed) -->
+
+  <!-- AI Support Agent -->
+  <script>
+    window.AgentConfig = {
+      apiUrl: "http://localhost:8000",   // Support Agent Backend
+      agentName: "redtail",
+      title: "How can I help?",
+      accent: "#E8630A",                 // Redtail brand orange
+      userAvatar: "👤"
+    };
+  </script>
+  <script src="src/widget.js?v=3"></script>
+
+  <!-- App -->
+  <script src="src/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: redtail-website
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn chat_server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: SERVE_STATIC
+        value: "true"
+      - key: GROQ_API_KEY
+        sync: false  # You'll set this in the Render dashboard
+      - key: GROQ_MODEL
+        value: mixtral-8x7b-32768
+    plan: free
