@@ -7,3 +7,6 @@ node_modules/
 Thumbs.db
 # Large video file (296MB) — host externally
 public/hero_video.mp4
+# FFmpeg temp files
+ffmpeg.zip
+ffmpeg_tmp/
