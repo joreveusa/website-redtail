@@ -597,7 +597,7 @@
       addMessage("bot", data.reply || "Sorry, I couldn't understand that.");
     } catch (err) {
       removeTyping();
-      addMessage("bot", "⚠️ I can't reach the server right now. Please call us at (505) 555-0100 or email info@redtailsurvey.com.");
+      addMessage("bot", "⚠️ I can't reach the server right now. Please call us at (505) 555-0100 or email redacted@example.com.");
     } finally {
       isBotTyping = false;
     }

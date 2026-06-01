@@ -59,7 +59,7 @@ TYPICAL TIMELINES:
 
 CONTACT:
 - Phone: (505) 555-0100
-- Email: info@redtailsurvey.com
+- Email: redacted@example.com
 - Service area: All of New Mexico
 
 GUIDELINES:
@@ -109,7 +109,7 @@ FALLBACK_RESPONSES = {
         "Typical cost ranges from $3,000–$10,000+ depending on the number of lots and complexity.",
     
     "contact|call|phone|email|reach|office|location|address":
-        "You can reach us at **(505) 555-0100** or email **info@redtailsurvey.com**. "
+        "You can reach us at **(505) 555-0100** or email **redacted@example.com**. "
         "We serve all 33 counties across New Mexico! You can also use the **Get an Estimate** form "
         "right here on the website for a free quote. We typically respond within one business day. 📞",
     
